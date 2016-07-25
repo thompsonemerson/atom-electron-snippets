@@ -2,17 +2,27 @@
   "name": "electron-snippets",
   "version": "1.0.0",
   "description": "A snippets of ElectronJS for Atom",
-  "license": "MIT",
-  "author": "Emerson Thompson <thompson.emerson@gmail.com>",
+  "main": "./snippets",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thompsonemerson/atom-electron-snippets.git"
+    "url": "git+https://github.com/thompsonemerson/atom-electron-snippets.git"
   },
   "keywords": [
-    "electron",
     "atom",
+    "electron",
+    "snippet",
     "snippets"
   ],
+  "author": "Emerson Thompson <thompson.emerson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thompsonemerson/atom-electron-snippets/issues"
+  },
+  "homepage": "https://github.com/thompsonemerson/atom-electron-snippets#readme",
   "engines": {
     "atom": "*"
   }
+}
