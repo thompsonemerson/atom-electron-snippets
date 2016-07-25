@@ -1,0 +1,18 @@
+{
+  "name": "electron-snippets",
+  "version": "1.0.0",
+  "description": "A snippets of ElectronJS for Atom",
+  "license": "MIT",
+  "author": "Emerson Thompson <thompson.emerson@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thompsonemerson/atom-electron-snippets.git"
+  },
+  "keywords": [
+    "electron",
+    "atom",
+    "snippets"
+  ],
+  "engines": {
+    "atom": "*"
+  }
