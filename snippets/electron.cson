@@ -1,5 +1,5 @@
 '.source.js':
-  'Electron':
+  'electron main':
     'prefix': 'electron'
     'body': """
       const electron = require('electron')
@@ -35,7 +35,7 @@
         }
       })
     """
-  'Electron':
+  'new window electron':
     'prefix': 'new window'
     'body': """
       function newWindow() {
@@ -48,12 +48,12 @@
         })
       }
     """
-  'Electron':
+  'on ready electron':
     'prefix': 'on ready'
     'body': """
       app.on('ready', createWindow)
     """
-  'Electron':
+  'on activate electron':
     'prefix': 'on activate'
     'body': """
       app.on('activate', function() {
@@ -62,14 +62,14 @@
         }
       })
     """
-  'Electron':
+  'on closed electron':
     'prefix': 'on closed'
     'body': """
       mainWindow.on('closed', function() {
         mainWindow = null
       })
     """
-  'Electron':
+  'on all closed electron':
     'prefix': 'on all closed'
     'body': """
       app.on('window-all-closed', function() {
@@ -78,7 +78,7 @@
         }
       })
     """
-  'Electron':
+  'devtools electron':
     'prefix': 'devtools'
     'body': """
       mainWindow.webContents.openDevTools()
