@@ -1,5 +1,5 @@
 '.source.js':
-  'Electron Main':
+  'Electron':
     'prefix': 'electron'
     'body': """
       const electron = require('electron')
@@ -34,4 +34,52 @@
           createWindow()
         }
       })
+    """
+  'Electron':
+    'prefix': 'new window'
+    'body': """
+      function newWindow() {
+        mainWindow = new BrowserWindow({width: 800, height: 600})
+
+        mainWindow.loadURL(`file://${__dirname}/index.html`)
+
+        mainWindow.on('closed', function() {
+          mainWindow = null
+        })
+      }
+    """
+  'Electron':
+    'prefix': 'on ready'
+    'body': """
+      app.on('ready', createWindow)
+    """
+  'Electron':
+    'prefix': 'on activate'
+    'body': """
+      app.on('activate', function() {
+        if (mainWindow === null) {
+          createWindow()
+        }
+      })
+    """
+  'Electron':
+    'prefix': 'on closed'
+    'body': """
+      mainWindow.on('closed', function() {
+        mainWindow = null
+      })
+    """
+  'Electron':
+    'prefix': 'on all closed'
+    'body': """
+      app.on('window-all-closed', function() {
+        if (process.platform !== 'darwin') {
+          app.quit()
+        }
+      })
+    """
+  'Electron':
+    'prefix': 'devtools'
+    'body': """
+      mainWindow.webContents.openDevTools()
     """
