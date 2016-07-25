@@ -7,7 +7,7 @@
 
 Use your terminal
 ```
-apm install electron-snippets
+apm install atom-electron-snippets
 ```
 
 Or open your Atom and go to `Packages > Settings View > Open` once in settings go to the Install tab and search for **electron-snippets**
