@@ -1,6 +1,6 @@
 {
-  "name": "electron-snippets",
-  "version": "1.2.0",
+  "name": "atom-electron-snippets",
+  "version": "2.0.1",
   "description": "A snippets of ElectronJS for Atom",
   "main": "./snippets",
   "scripts": {
